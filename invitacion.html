@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mis 15 Uma</title>
+
+  <link rel="icon" type="image/png" href="Pixelarte Isologotipo.png">
+
+  <link rel="stylesheet" href="inv.css">
+</head>
+<body>
+
+  <!-- Música -->
+  <audio id="musica" preload="auto" loop>
+    <source src="Djo - End of Beginning (Instrumental).mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Botón música -->
+  <button id="musicToggle" class="music-btn">▶</button>
+
+<section class="foto-portada">
+  <img src="Inicio.JPG" class="hero-desktop" alt="Foto de la quinceañera">
+  <img src="Inicio.JPG" class="hero-mobile" alt="Foto">
+  <div class="hero-text">
+    <span class="hero-title">MIS 15</span>
+    <span class="hero-name">Uma</span>
+  </div>
+
+  
+   <!-- CUENTA REGRESIVA -->
+  <div class="countdown-wrapper">
+    <div class="countdown">
+      <div class="time-box">
+        <span id="days">0</span>
+        <small>DÍAS</small>
+      </div>
+      <div class="time-box">
+        <span id="hours">0</span>
+        <small>HORAS</small>
+      </div>
+      <div class="time-box">
+        <span id="minutes">0</span>
+        <small>MINUTOS</small>
+      </div>
+      <div class="time-box">
+        <span id="seconds">0</span>
+        <small>SEGUNDOS</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ <section class="frase-separador">
+  <div class="linea reveal"></div>
+
+  <p class="frase-texto reveal">
+Hay historias y <strong>personas</strong> que no voy a olvidar y   <br> 
+recuerdos como este que siempre voy a guardar.  <br>
+Porque son parte de mi vida es mi  deseo que compartan <br>
+conmigo en este día tan <strong>especial</strong>.
+ </p>
+
+  <div class="linea reveal"></div>
+</section>
+
+<section class="section-fecha reveal">
+  <div class="fecha-contenido">
+    
+    <div class="fecha-icono">
+      <img src="Calendario.gif" alt="Calendario">
+    </div>
+
+    <h2 class="fecha-titulo">¿Cuándo?</h2>
+
+    <p class="fecha-texto">
+      11 de Abril de 2026<br>
+      | 21:00 Hs |
+    </p>
+
+  </div>
+</section>
+
+<section class="donde-section reveal">
+
+  <!-- ICONO (poné tu imagen acá) -->
+  <img src="Ubicacion.gif" alt="Ubicación" class="icono-donde">
+
+  <p class="donde-titulo">¿Dónde?</p>
+
+  <p class="donde-info">
+    Salón Cite Eventos <br>
+    José Ingenieros y Calle Nº 226 <br>
+    Lobos, Buenos Aires
+  </p>
+
+  <button class="donde-boton" onclick="abrirMapa('fiesta')">
+    VER MAPA
+  </button>
+
+</section>
+<!-- MAPA MODAL -->
+<div id="mapaModal" class="mapa-modal">
+  <div class="mapa-contenido">
+    <button class="mapa-cerrar" onclick="cerrarMapa()">X</button>
+    
+  <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3261.2413131970375!2d-59.08154500317993!3d-35.175537584242605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd070065d02f39%3A0x71fb8a62ce1b2350!2zQ2l0w6k!5e0!3m2!1ses-419!2sar!4v1773163796106!5m2!1ses-419!2sar"
+style="border:0;"
+allowfullscreen=""
+loading="lazy"
+referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+  </div>
+</div>
+
+<section class="carousel-section reveal">
+  <div class="carousel-container carousel-hidden">
+
+
+    <button class="carousel-btn prev" onclick="moveSlide(this, -1)">‹</button>
+<button class="carousel-btn next" onclick="moveSlide(this, 1)">›</button>
+
+
+
+    <div class="carousel-track">
+  <div class="carousel-item"><img src="1.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="2.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="3.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="4.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="5.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="1.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="2.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="3.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="4.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="5.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="1.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="2.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="3.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="4.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="5.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="1.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="2.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="3.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="4.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="5.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="1.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="2.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="3.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="4.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="5.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="1.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="2.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="3.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="4.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="5.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="1.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="2.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="3.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="4.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="5.webp" alt="" loading="lazy" decoding="async"></div>
+</div>
+
+  </div>
+</section>
+
+<section class="dresscode-section reveal">
+
+  <!-- ICONO (reemplazá src por el tuyo) -->
+  <img src="Diamante.gif" alt="Dress Code" class="dresscode-icono">
+
+  <h2 class="dresscode-titulo">Vestimenta</h2>
+
+  <p class="dresscode-tipo">ELEGANTE - SPORT</p>
+
+  <div class="dresscode-linea"></div>
+
+  <p class="dresscode-aclaracion">
+    Para mantener la armonía del <br>
+    evento, evitar colores bordó, <br> 
+    violeta y rosa.
+  </p>
+
+</section>
+
+<section class="frase-separador frase-oscura reveal">
+
+  <div class="linea-oscura reveal"></div>
+
+  <p class="frase-texto-oscura reveal">
+    COMIENZA MI CUENTA REGRESIVA <br>
+    PARA VIVIR LO QUE TANTO SOÑÉ.<br>
+  </p>
+
+  <div class="linea-oscura reveal"></div>
+
+</section>
+
+<section class="album-section reveal">
+
+  <!-- ICONO (poné el tuyo) -->
+  <img src="Camara.gif" alt="Álbum de fotos" class="album-icono">
+
+  <h2 class="album-titulo">Quiero ver tus fotos</h2>
+
+  <p class="album-texto">
+    Pueden subir todas sus fotos <br>
+    del evento a mi álbum compartido<br>
+  </p>
+
+  <button class="album-boton" onclick="abrirAlbum()">
+SUBIR FOTOS
+</button>
+
+</section>
+
+<div id="albumOverlay">
+
+  <button class="cerrar-album" onclick="cerrarAlbum()">✕</button>
+
+  <iframe src="album.html"></iframe>
+
+</div>
+
+<section class="regalo-section reveal">
+
+  <div class="regalo-contenido">
+
+    <!-- ICONO -->
+    <div class="regalo-icono">
+      <img src="Regalo.gif" alt="Regalo">
+    </div>
+
+    <h2 class="regalo-titulo">Regalo</h2>
+
+    <p class="regalo-texto">
+  Tu presencia es mi mejor regalo,<br>
+  pero si deseás obsequiarme algo<br>
+  también habrá una urna en el salón.<br><br>
+
+  Si preferís hacerlo de manera digital<br>
+  podés utilizar mi alias.
+</p>
+
+  </div>
+
+  <button class="album-boton" onclick="abrirAlias()">
+VER ALIAS
+</button>
+
+</section>
+
+<div id="aliasOverlay">
+
+<button class="cerrar-album" onclick="cerrarAlias()">✕</button>
+
+<div class="alias-box">
+
+<p class="alias-titulo">Alias para regalo</p>
+
+<p class="alias-texto">
+uma.camir.66
+</p>
+
+<p class="alias-aclaracion">
+Mercado Pago<br>
+Titular: Uma Adanczyk
+</p>
+
+</div>
+
+</div>
+
+<section class="carousel-horizontal reveal">
+
+  <div class="carousel-container carousel-hidden">
+
+    <button class="carousel-btn prev" onclick="moveSlide(this, -1)">‹</button>
+<button class="carousel-btn next" onclick="moveSlide(this, 1)">›</button>
+
+
+    <div class="carousel-track">
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="6.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="7.webp" alt="" loading="lazy" decoding="async"></div>
+  <div class="carousel-item"><img src="8.webp" alt="" loading="lazy" decoding="async"></div>
+</div>
+  </div>
+
+</section>
+
+<section class="frase-separador frase-oscura reveal">
+
+  <div class="linea-oscura reveal"></div>
+
+  <p class="frase-texto-oscura reveal">
+    QUIERO QUE SEAS PARTE DE ESTA NOCHE TAN ESPECIAL PARA MÍ
+  </p>
+
+  <div class="linea-oscura reveal"></div>
+
+</section>
+<section class="musica-section reveal">
+
+  <img src="Musica.gif" alt="Música" class="musica-icono">
+
+  <h2 class="musica-titulo">Sumá tu canción</h2>
+
+  <p class="musica-texto">
+    ¿Cuál es la canción q no debe <br>
+     faltar en la playlist de la fiesta?
+  </p>
+
+  <!-- 🎧 VISTA PREVIA SPOTIFY -->
+  <div class="spotify-preview">
+    <iframe
+src="https://open.spotify.com/embed/playlist/4kuWzV9ksX60WKoh5dhLXi?theme=0"
+loading="lazy"
+allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+</iframe>
+  </div>
+
+ <a
+href="https://open.spotify.com/playlist/4kuWzV9ksX60WKoh5dhLXi?si=g2UB16sFR_uOu-hkLE8kAg&pt=8c604361aba2d9b4265a66ca1dd3f3fa&pi=sgia3PybS3mqy"
+target="_blank"
+class="musica-boton"
+>
+SUMÁ TU CANCIÓN
+</a>
+
+</section>
+
+
+<section class="instagram-section reveal">
+
+  <div class="instagram-contenido">
+
+    <!-- ICONO (logo instagram / gif) -->
+    <div class="instagram-icono">
+      <img src="Instagram.gif" alt="Instagram">
+    </div>
+
+    <h2 class="instagram-titulo">Seguime en Instagram</h2>
+
+    <p class="instagram-texto">
+      Compartí tus fotos, videos y recuerdos<br>
+de esta noche tan especial<br>
+      etiquetándome en Instagram.<br>
+    </p>
+
+    <div class="instagram-preview">
+  <img src="Instagram Foto.png" alt="Perfil de Instagram" class="ig-avatar">
+
+  <p class="ig-user">@mumii_20</p>
+
+  <div class="ig-grid">
+    <img src="Instagram 1.jpeg" alt="">
+    <img src="Instagram 2.jpeg" alt="">
+    <img src="Instagram 3.jpeg" alt="">
+  </div>
+</div>
+
+    <a
+      href="https://www.instagram.com/malegatto9?igsh=MTMxNmNuZTY4c3pyZg=="
+      target="_blank"
+      class="instagram-boton"
+    >
+      VER INSTAGRAM
+    </a>
+
+  </div>
+
+</section>
+
+<section class="asistencia-section reveal">
+  <p class="asistencia-titulo">Confirmá tu Asistencia</p>
+  <p class="asistencia-fecha">Antes del 1 de Abril de 2026</p>
+
+  <!-- CANTIDAD (AFUERA DEL CUADRO) -->
+<div class="cantidad-wrapper">
+  <label for="cantidadPersonas" class="label">
+    Número de personas a confirmar
+  </label>
+
+  <select name="entry.540690027" id="cantidadPersonas" required>
+    <option value="">Seleccionar</option>
+    <option value="1">1 persona</option>
+    <option value="2">2 personas</option>
+    <option value="3">3 personas</option>
+    <option value="4">4 personas</option>
+    <option value="5">5 personas</option>
+    <option value="6">6 personas</option>
+    <option value="7">7 personas</option>
+  </select>
+</div>
+
+  <div class="asistencia-card">
+    <form
+      id="asistenciaForm"
+      action="https://docs.google.com/forms/d/e/1FAIpQLSeoBOgUkE0L_HN_k2wKlY4dHP-HKpoHqclW5BYTyOA9KRo0pw/formResponse"
+      method="POST"
+      target="hidden_iframe"
+    >
+   <input
+  type="hidden"
+  name="entry.540690027"
+  id="cantidadHidden"
+/>
+
+<div class="campo campo-radios">
+        <label class="label">¿Asistirás?</label>
+
+        <label class="radio-item">
+          <input type="radio" name="entry.1779840284" value="Confirmo Asistencia" required>
+          <span>¡Confirmo!</span>
+        </label>
+
+        <label class="radio-item">
+          <input type="radio" name="entry.1779840284" value="No podré asistir">
+          <span>No podré asistir</span>
+        </label>
+      </div>
+
+      <!-- Personas extra (2,3,4,5) -->
+<div id="personasExtra"></div>
+
+           <!-- INVITADOS -->
+      <div id="personasContainer"></div>
+
+      <!-- CAMPO OCULTO -->
+     <textarea
+  name="entry.555114571"
+  id="datosFinales"
+  style="display:none;"
+></textarea>
+
+
+      <!-- MENSAJE -->
+      <div class="campo">
+  <label class="label">Mensaje</label>
+
+  <textarea
+    name="entry.1248954764"
+    id="mensaje"
+    placeholder="Escribime lo que quieras 🤍"
+    maxlength="200"
+  ></textarea>
+
+  <small id="contador" style="
+    display:block;
+    margin-top:6px;
+    font-size:0.65rem;
+    letter-spacing:0.12em;
+    color:#F6E7B2;
+    text-align:right;
+  ">
+    180 caracteres restantes
+  </small>
+</div>
+
+    </form>
+
+    <button
+  type="submit"
+  class="asistencia-boton"
+  form="asistenciaForm"
+>
+  ENVIAR RESPUESTA
+</button>
+
+    <iframe name="hidden_iframe" style="display:none;"></iframe>
+
+    <div id="mensajeGracias" class="mensaje-gracias oculto">
+      <p class="mensaje-titulo">¡GRACIAS!</p>
+      <p class="mensaje-texto">Tu respuesta fue enviada correctamente 🤍</p>
+    </div>
+  </div>
+</section>
+
+<section class="calendario-section reveal">
+
+  <div class="calendario-contenido">
+
+    <!-- ICONO -->
+    <div class="calendario-icono">
+      <img src="Sobre.gif" alt="Calendario">
+    </div>
+
+    <h2 class="calendario-titulo">Reserva la Fecha</h2>
+
+    <p class="calendario-texto">
+      Sumá la fecha a tu calendario<br>
+      para no olvidarte de esta noche<br>
+      tan especial
+    </p>
+
+    <a
+      href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=NDB1NWY4bTQ5Zm9zcGZ2aWljbDhjY21wa24gc29maXRydWViYUBt&tmsrc=sofitrueba%40gmail.com"
+      target="_blank"
+      class="calendario-boton"
+    >
+      AGREGAR AL CALENDARIO
+    </a>
+
+  </div>
+
+</section>
+
+<section class="frase-separador reveal">
+  <div class="linea reveal"></div>
+
+  <p class="frase-texto reveal">
+    PREPARATE PARA ÉSTA GRAN <strong>¡NOCHE!</strong>
+  </p>
+
+  <div class="linea reveal"></div>
+</section>
+
+<section class="foto-espera-section reveal">
+
+  <div class="foto-espera-contenido">
+
+    <!-- FOTO VERTICAL -->
+    <img src="Final.jpg" alt="Male" class="foto-espera-img">
+
+    <!-- ICONO -->
+    <img src="Globo.gif" alt="Icono" class="foto-espera-icono">
+
+    <!-- TEXTO -->
+    <p class="foto-espera-texto">Te espero!</p>
+    <p class="foto-espera-nombre">Umi</p>
+
+  </div>
+
+</section>
+
+  <script src="script.js"></script>
+
+  <footer class="footer">
+
+  <div class="footer-contenido">
+
+    <!-- LOGO -->
+    <img src="Pixelarte Logotipo.png" alt="Pixelarte" class="footer-logo">
+
+    <!-- REDES -->
+    <div class="footer-redes">
+
+      <a
+        href="https://wa.me/5492345478614"
+        target="_blank"
+        aria-label="WhatsApp"
+        class="footer-icono"
+      >
+        <img src="Whatsapp.png" alt="WhatsApp">
+      </a>
+
+      <a
+        href="https://www.instagram.com/pixelartechivilcoy/"
+        target="_blank"
+        aria-label="Instagram"
+        class="footer-icono"
+      >
+        <img src="Instagram.png" alt="Instagram">
+      </a>
+
+    </div>
+
+  </div>
+
+</footer>
+
+</body>
+</html>
