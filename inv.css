@@ -1953,7 +1953,7 @@ display:block;
 }
 
 .cerrar-album{
-position:absolute;
+position:fixed;
 top:calc(20px + env(safe-area-inset-top));
 right:20px;
 
@@ -2049,3 +2049,4 @@ opacity:0.7;
 margin-top:2rem;
 
 }
+
